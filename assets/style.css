@@ -1,0 +1,138 @@
+/*feuille de style web desktop a 1200px*/ 
+/*variables*/
+:root{
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+@media (min-width:1200px){
+    .container{
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+    p{
+        text-align: left;
+    }
+    header{
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+        header .info{
+            opacity: 100%;
+            background-color: var(--green);
+            background-image: url(images/banner_wave.svg);
+            padding: 2px 35px;
+            color: var(--white);
+            margin-bottom: 30px;
+        }
+        .info p{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        header .menu{
+            opacity: 100%;
+            width: 0;
+        }
+        header .logo{
+            width: 5%
+        }
+            header nav{
+                opacity: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+                header nav ul{
+                    display: flex;
+                    justify-content: space-between;
+                    gap:30px;
+                    opacity: 100%;
+                }
+                header nav a{
+                    text-decoration: none;
+                    color: var(--gray-dark);
+                    transition: color 500ms;
+                }
+                header nav a:hover{
+                    color: var(--green);
+                    transition: color 500ms;
+                }
+                header nav li{
+                    list-style: none;
+                }
+        header .beautiful{
+            display: flex;
+            align-items: center;
+            margin-top: 10%;
+        }
+        header .beautiful img{
+            width: 100%;
+            margin: 0;
+        }
+        header .btn{
+            margin-left: 0;
+        }
+        header p{
+            text-align: left;
+        }
+        header h1{
+            text-align:left;
+        }
+    /*main*/
+    /*section 1 The Home of fresh product*/
+    main section .btn{
+        margin-left: 0;
+    }
+    .home{
+        padding-top: 200px;
+    }
+    #fresh{
+        display: flex;
+        justify-content: space-between;
+    }
+        .home h2{
+            text-align: left;
+        }
+        .home img{
+            width: 100%;
+            margin: 0;
+            padding-bottom: 200px;
+        }
+        /*section 2 How it works*/
+    #how .cards{
+        display:flex;
+        justify-content: space-between;
+        padding-bottom: 200px;
+        align-items: center;
+    }
+        #how .cards h3{
+            text-align:center;
+        }
+        #how .cards p{
+            text-align: center;
+            width: 90%;
+    }
+            #how .phone{
+                width: 78%;
+            }
+            #how .house{
+                width: 99%;
+            }
+        /*footer*/
+    footer{
+        margin-bottom: 0;
+        padding: 0;
+    }
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--green-dark);
+        font-weight: bold;
+        gap: 50px;
+        padding-top: 5px;
+    }
+}

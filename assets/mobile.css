@@ -1,0 +1,154 @@
+/*feuille de style mobile first*/ 
+/*variables*/
+:root{
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+    /*le container*/
+    .container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    /*le span de couleur bleu*/ 
+    .blue{
+        color: var(--green);
+    }
+    /*les 2 boutons bleu*/
+    .btn{
+        background-image:url(images/button_wave.svg);
+        background-color: var(--green);
+        padding: 10px 10px;
+        text-decoration: none;
+        border-radius: 8px;
+        color: var(--white);
+        margin-left: 100px;
+        transition: background-color 500ms;
+    }
+    .btn:hover{
+        background-color: var(--blue-dark);
+        transition: background-color 500ms;
+    }
+
+    /*le texte est aligné*/
+    p{
+        text-align: center;
+    }
+
+
+    /*header*/
+    header{
+        margin-top: -70px;
+        margin-bottom: 50px;
+    }
+
+        header .info{
+            opacity: 0;
+            position: relative;
+        }
+
+        header .logo{
+            width: 10%;
+        }
+
+            header .menu{
+                width: 7%;
+                background-color: var(--gray-light);
+                position: absolute;
+                right: 0;
+                margin-right: 20px;
+                padding: 10px 10px;
+                border-radius: 10px;
+            }
+
+    header .beautiful{
+        margin-top: -120px;
+    }
+        header ul{
+            opacity:0; 
+        }
+
+    header h1{
+        text-align: center;
+        font-size: 3em;
+    }
+
+    header p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    header .burger{
+        width: 70%;
+        margin-left: 17%;
+        margin-top: 20%
+}
+/*main*/ 
+    /*section 1 Home*/ 
+    h2{
+        font-size: 3em;
+        text-align: center;
+        color: var(--green);
+    }
+    h3{
+        text-align: center;
+    }
+    .home{
+        background-color: var(--green-light);
+        padding-top: 100px;
+    }
+    .home h2{
+        margin-top: 0;
+    }
+    .home p{
+        margin-bottom: 50px;
+    }
+    .home img{
+        width:70%;
+        margin-left: 15%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+        /*section 2 How it works*/
+    #how{
+        display: flex;
+        align-items: center;
+        }
+
+    #how p{
+        color: var(--blue-dark);
+    }
+
+    #how img{
+        width: 70%;
+        margin-left: 55px;
+    }
+    /*footer*/
+footer{
+    background-color:var(--green-light);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    
+}
+    footer p{
+        color: var(--green-dark);
+        font-weight: bold;
+        text-align: left;
+        margin-top: 0;
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--blue-dark);
+        padding: 20px 10px;
+    }
